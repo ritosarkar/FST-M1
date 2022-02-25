@@ -5,10 +5,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Activity2 {
 
-
     public static void main(String[] args){
         WebDriver driver= new FirefoxDriver();
+        //Launch browser
         driver.get("https://www.training-support.net");
+
         String pageTitle=driver.getTitle();
         System.out.println("Page title: "+pageTitle);
 

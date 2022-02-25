@@ -9,9 +9,13 @@ public class Activity8_1 {
     public static void main(String[] args) {
 
       WebDriver driver = new FirefoxDriver();
+      //open browser
       driver.get("https://training-support.net/selenium/tables");
+      //get columns using table head
       List<WebElement> columnsTh = driver.findElements(By.xpath("//table[@id='sortableTable']/thead/tr/th"));
+      //get columns using tbody
       List<WebElement> columns= driver.findElements(By.xpath("//table[@id='sortableTable']/tbody/tr[1]/td"));
+      //get rows tbody
       List<WebElement> rows= driver.findElements(By.xpath("//table[@id='sortableTable']/tbody/tr"));
       System.out.println("Number of columns by tbody: "+ columns.size()+", also by thead: "+columnsTh.size()+". Number of rows: "+rows.size());
 
@@ -25,10 +29,11 @@ public class Activity8_1 {
             i++;
         }
       System.out.println("Second row second column: "+driver.findElement(By.xpath("//table[@id='sortableTable']/tbody/tr[2]/td[2]")).getText());*/
+        //get details from third row
         List<WebElement> thirdRow=driver.findElements(By.xpath("//table[@id='sortableTable']/tbody/tr[3]/td"));
         for (WebElement cellValue : thirdRow)
         {System.out.println("Cell value: "+cellValue.getText());}
-
+        //get the details from second row
         WebElement secondRowCol=driver.findElement(By.xpath("//table[@id='sortableTable']/tbody/tr[2]/td[2]"));
         System.out.println("Second row and second column: "+secondRowCol.getText());
       driver.quit();

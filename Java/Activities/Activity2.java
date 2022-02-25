@@ -10,7 +10,7 @@ public class Activity2 {
          if (checkSum >= fixedKey)
           break;
        }
-        return checkSum == 30;
+        return checkSum == fixedKey;
     }
     public static void main(String[] args) {
         int[]  intArr = new int[]{10, 77, 10, 54, -11,10};

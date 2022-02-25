@@ -7,9 +7,12 @@ public class Activity5_1 {
 
     public static void main(String[] args)
     {
+        //create new instance
         WebDriver driver = new FirefoxDriver();
+        //Launch URL
         driver.get(" https://training-support.net/selenium/dynamic-controls");
         System.out.println("Page title is: "+driver.getTitle());
+        //Find the checkbox
         WebElement element= driver.findElement(By.className("willDisappear"));
         System.out.println("Check box is visible? "+element.isDisplayed());
         if(element.isDisplayed())

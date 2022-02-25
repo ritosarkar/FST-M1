@@ -28,7 +28,7 @@ public class GoogleSearchSteps {
 
     @When("^User types in Cheese and hits enter$")
     public void user_types_in_cheese_and_hits_enter() {
-        driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Cheese", Keys.ENTER);
+      driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Cheese", Keys.ENTER);
 
     }
 

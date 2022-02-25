@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,9 +27,11 @@ public class LoginTestSteps {
 
     @When("^User enters username and password$")
     public void user_enters_username_and_password() {
-        if (driver.findElement(By.id("username")).isDisplayed() && driver.findElement(By.id("password")).isDisplayed()) {
-            driver.findElement(By.id("username")).sendKeys("admin");
-            driver.findElement(By.id("password")).sendKeys("password");
+        WebElement username = driver.findElement(By.id("username"));
+        WebElement password = driver.findElement(By.id("password"));
+        if (username.isDisplayed() && password.isDisplayed()) {
+            username.sendKeys("admin");
+            password.sendKeys("password");
         }
         if(driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).isEnabled())
             driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
@@ -36,9 +39,11 @@ public class LoginTestSteps {
 
     @When("^User enters \"(.*)\" and \"(.*)\"$")
     public void user_enters_something_and_something(String usernames, String passwords)  {
-        if (driver.findElement(By.id("username")).isDisplayed() && driver.findElement(By.id("password")).isDisplayed()) {
+        WebElement user= driver.findElement(By.id("username"));
+        WebElement pwd= driver.findElement(By.id("password"));
+        if (user.isDisplayed() && pwd.isDisplayed()) {
             driver.findElement(By.id("username")).sendKeys(usernames);
-            driver.findElement(By.id("password")).sendKeys(passwords);
+            pwd.sendKeys(passwords);
         }
         if(driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).isEnabled())
             driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
