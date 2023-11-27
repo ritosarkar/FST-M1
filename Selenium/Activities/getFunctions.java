@@ -10,21 +10,21 @@ public class Activity4_3 {
         WebDriver driver=new FirefoxDriver();
         driver.get("https://www.training-support.net/selenium/target-practice");
 
-        System.out.println("Page title is: "+driver.getTitle());
+        System.out.println("Page title is: "+driver.getTitle()); //getting title
         System.out.println("Page title is Target Practice:"+driver.getTitle().contains("Target Practice"));
 
         WebElement thirdHeader, fifthHeader,violetButton,greyButton;
 
         thirdHeader = driver.findElement(By.xpath("//*[contains(text(),'Third header')]"));
-        String textOfThirdHeader=thirdHeader.getText();
+        String textOfThirdHeader=thirdHeader.getText(); //getting text
         System.out.println("Text of third header is: "+textOfThirdHeader);
 
         fifthHeader= driver.findElement(By.xpath("//*[contains(text(),'Fifth header')]"));
-        String colourOfFifthHeader=fifthHeader.getCssValue("color");
+        String colourOfFifthHeader=fifthHeader.getCssValue("color"); //getting css attribute;color
         System.out.println("CSS value of the fifth header is: "+colourOfFifthHeader);
 
         violetButton= driver.findElement(By.xpath("//button[contains(text(),'Violet')]"));
-        String classOfVioletButton=violetButton.getAttribute("class");
+        String classOfVioletButton=violetButton.getAttribute("class");  //getting class
         System.out.println("Class of violet button is: "+classOfVioletButton);
 
         greyButton=
