@@ -7,7 +7,30 @@ import java.util.List;
 public class Activity8_1 {
 
     public static void main(String[] args) {
-
+    /*Sample table
+    <table>
+     <thead>
+      <tr>
+       <th>First Name</th>
+       <th>Last Name</th>
+       <th>Age</th>
+      </tr>
+     <thead>
+     
+   <tbody>
+   <tr>
+    <td>Jill</td>
+    <td>Ann</td>
+    <td>24</td>
+   </tr>
+   <tr>
+    <td>Eve</td>
+    <td>Anderson</td>
+    <td>34</td>
+   </tr>
+  </tbody>
+  </table>
+  */
       WebDriver driver = new FirefoxDriver();
       //open browser
       driver.get("https://training-support.net/selenium/tables");
