@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import javax.swing.*;
 
-public class Activity10_1 {
+public class ActionsSimpleOperations {
 
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver= new FirefoxDriver();
