@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class Activity9_2 {
+public class MultiSelectOperations {
     public static void main(String[] args){
         int i=4;
         WebDriver driver=new FirefoxDriver();
