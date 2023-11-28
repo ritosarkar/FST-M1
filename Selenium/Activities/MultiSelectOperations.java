@@ -33,9 +33,10 @@ public class MultiSelectOperations {
             System.out.println("Selected option(s): "+selected.getText());
             select.deselectByIndex(7);
             System.out.println("Selected option(s): "+selected.getText());
-
+            //Inbuild function to get first selected option from dropdown
             System.out.println("First selected option is: "+select.getFirstSelectedOption().getText());
-
+            
+             //Inbuild function to get all selected option from dropdown
             List<WebElement> elementList=select.getAllSelectedOptions();
             for(WebElement selectedEle : elementList)
             {
