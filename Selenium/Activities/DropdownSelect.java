@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
-public class Activity9_1 {
+public class DropdownSelect {
     public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://training-support.net/selenium/selects");
