@@ -28,6 +28,11 @@ public class Activity8_1 {
     <td>Anderson</td>
     <td>34</td>
    </tr>
+    <tr>
+    <td>Ana</td>
+    <td>Gen</td>
+    <td>54</td>
+   </tr>
   </tbody>
   </table>
   */
