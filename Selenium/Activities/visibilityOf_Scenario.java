@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Activity7_2 {
+public class visibilityOf_Scenario {
 
     public static void main(String[] args)
     {
