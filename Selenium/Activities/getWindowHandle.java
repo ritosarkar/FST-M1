@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Set;
 
-public class Activity11_4 {
+public class getWindowHandle {
 
     public static void main(String[] args){
 
