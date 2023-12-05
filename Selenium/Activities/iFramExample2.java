@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Activity12_2 {
+public class iFramExample2 {
 
     public static void main(String[] args){
         WebDriver driver= new FirefoxDriver();
