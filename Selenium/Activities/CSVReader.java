@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class Activity13_1 {
+public class CSVReader  {
 
     public static void main(String[] args) throws IOException, CsvException {
         FileReader fileReader=new FileReader("src/test/java/sample.csv");
