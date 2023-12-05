@@ -27,5 +27,10 @@ public class AlertOperations {
         System.out.println("Alert message on screen: "+alert.getText());
         alert.accept();
         driver.quit();
+
+        /*driver.switchTo().alert().dismiss();
+          driver.switchTo().alert().accept();
+          driver.switchTo().alert().sendKeys("Text");
+        */
     }
 }
