@@ -28,9 +28,9 @@ public class AlertOperations {
         alert.accept();
         driver.quit();
 
-        /*driver.switchTo().alert().dismiss();
-          driver.switchTo().alert().accept();
-          driver.switchTo().alert().sendKeys("Text");
+        /*alert.dismiss();
+          alert.accept();
+          alert.sendKeys("Text");
         */
     }
 }
