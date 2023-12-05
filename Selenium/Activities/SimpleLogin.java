@@ -6,7 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class Activity12_3 {
+public class SimpleLogin {
     public static void main(String[] args){
         WebDriver driver=new FirefoxDriver();
         String  tooltipText;
