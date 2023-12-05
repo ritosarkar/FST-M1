@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Activity10_3 {
+public class ActionsDragAndDrop {
     public static void main(String[] args)
     {
         WebDriver driver;
