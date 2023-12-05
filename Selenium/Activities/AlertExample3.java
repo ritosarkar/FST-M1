@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Activity11_3 {
+public class AlertExample3 {
     public static void main(String[] args)
     {
         WebDriver driver;
