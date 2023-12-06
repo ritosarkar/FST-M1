@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class Activity8_2 {
+public class table_operations {
 
     public static void main(String[] args)
     {
