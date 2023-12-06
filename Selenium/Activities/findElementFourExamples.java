@@ -17,13 +17,13 @@ public class Activity2 {
         System.out.println("text using elementId: "+elementId.getText());
 
         WebElement elementClassName=driver.findElement(By.className("inverted"));
-        System.out.println("text using elementClassName: "+elementId.getText());
+        System.out.println("text using elementClassName: "+elementClassName.getText());
 
         WebElement elementLinkText=driver.findElement(By.linkText("About Us"));
-        System.out.println("text using elementLinkText: "+elementId.getText());
+        System.out.println("text using elementLinkText: "+elementLinkText.getText());
 
         WebElement elementCssSelector=driver.findElement(By.cssSelector(".inverted"));
-        System.out.println("text using elementCssSelector: "+elementId.getText());
+        System.out.println("text using elementCssSelector: "+elementCssSelector.getText());
 
         driver.quit();
 
