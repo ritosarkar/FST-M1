@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Activity13_2a {
+public class Read_WriteXl {
     //Write Excel
     public void writeExcel(String filePath) {
         //Blank workbook
